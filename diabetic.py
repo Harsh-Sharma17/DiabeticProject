@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 # Load dataset
-df = pd.read_csv("diabetics.csv")
+df = pd.read_csv("diabetes.csv")
 
 # Features and target
 X = df.drop("Outcome", axis=1)
@@ -86,3 +86,4 @@ if st.button("Predict"):
     else:
 
         st.success("Prediction: Not Diabetic")
+
